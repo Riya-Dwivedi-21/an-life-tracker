@@ -1,0 +1,47 @@
+name: an_life_tracker
+description: AN Life Tracker - Focus & Nutrition App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.1
+  fl_chart: ^0.66.0
+  shared_preferences: ^2.2.2
+  intl: ^0.18.1
+  uuid: ^4.2.1
+  supabase_flutter: ^2.5.0
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.2
+  permission_handler: ^11.0.1
+  image_picker: ^1.0.4
+  path_provider: ^2.1.1
+  connectivity_plus: ^5.0.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path: ^1.8.3
+  crypto: ^3.0.3
+  flutter_secure_storage: ^10.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+
+  # fonts:
+  #   - family: SF Pro
+  #     fonts:
+  #       - asset: assets/fonts/SF-Pro-Display-Regular.otf
+  #       - asset: assets/fonts/SF-Pro-Display-Bold.otf
+  #         weight: 700
