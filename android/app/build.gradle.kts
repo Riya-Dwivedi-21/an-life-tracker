@@ -7,12 +7,13 @@ plugins {
 
 android {
     namespace = "com.anlifetracker.app"
-    compileSdk = 34  // Latest stable SDK
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 36  // Updated for plugin compatibility
+    ndkVersion = "27.0.12077973"  // Updated for plugin compatibility
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+        isCoreLibraryDesugaringEnabled = true  // Required for flutter_local_notifications
     }
 
     kotlinOptions {
@@ -38,4 +39,8 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 }
